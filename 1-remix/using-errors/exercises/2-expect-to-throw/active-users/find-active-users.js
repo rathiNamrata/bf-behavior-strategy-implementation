@@ -5,6 +5,8 @@
  * a user object must have with a boolean .active property
  * @param {object[]} users - an array of user objects
  * @returns {object[]} an array of only active users
+ * @throws{TypeError} Throws a TypeError if the argument is
+ * not an array, or if the array contains invalid elements.
  */
 export const findActiveUsers = (users) => {
     if (!Array.isArray(users)) {

@@ -10,7 +10,15 @@
 
 // -------- your solutions --------
 
-for (const solution of [secretSolution]) {
+const reverseStr1 = (str = '') => {
+    if (str === '') {
+        return str;
+    }
+    return str.split('').reverse().join('');
+};
+
+const mySolutions = [reverseStr1];
+for (const solution of mySolutions) {
     // the main test suite for the function
     describe(solution.name + ': reverses a string', () => {
         it('default parameter is an empty string -> ""', () => {
@@ -22,7 +30,6 @@ for (const solution of [secretSolution]) {
         it('a string with all capital letters', () => {
             expect(solution('ASDF')).toEqual('FDSA');
         });
-        // write at least 5 more tests ...
     });
 }
 

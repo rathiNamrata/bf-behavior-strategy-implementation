@@ -6,6 +6,19 @@ function removeExclamationMarks(s) {
   return s.replace(/!/gi, '');
 }
 
+describe('remove exclamation marks from a string', () => {
+  it('Hello!  -> Hello', () => {
+      expect(removeExclamationMarks('Hello!')).toEqual('Hello');
+  });
+
+  it('go! and come! -> go and come', () => {
+      expect(removeExclamationMarks('go! and come!')).toEqual('go and come');
+  });
+  it('hi!!!!!!!!!! -> hi', () => {
+      expect(removeExclamationMarks('hi!!!!!!!!!!')).toEqual('hi');
+  });
+});
+
 var function removeExclamationMarks(s) { // distractor
 s.replace(/!/gi, ''); // distractor
 function removeExclamationMarks(s) => { // distractor
