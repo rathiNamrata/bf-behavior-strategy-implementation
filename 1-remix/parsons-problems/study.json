@@ -1,9 +1,7 @@
 {
-  "--defaults": {
-    ".js": "parsons"
-  },
   "study": {
-    "run": false,
-    "debug": false
+    "run": true,
+    "debug": true,
+    "save": true
   }
 }
